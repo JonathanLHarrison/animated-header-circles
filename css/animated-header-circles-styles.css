@@ -1,0 +1,111 @@
+/*
+	Styles for Animated Header Circles
+	Jonathan Harrison 2019
+*/
+
+/* 
+	Static Content
+*/
+html, body, #animatedHeader {
+	background-color: #070459;
+}
+#animationContainer {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+}
+#animatedHeader {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+#headerBackground {
+	position: absolute;
+	overflow: hidden;
+	width: 96%;
+	max-width: 896px;
+	background-color: #110273;
+}
+#headerForeground {
+	position: absolute;
+	width: 99%;
+	max-width: 900px;
+	height: auto;
+	z-index: 10;
+}
+#headerRectangle {
+	stroke: none;
+	fill: #070459;
+}
+
+/*
+	animated content
+*/
+.animated-header-circle {
+	position: absolute;
+	border-radius: 50%;
+}
+
+/*
+	colors
+*/
+.animated-header-circle-color-1 {
+	background-color: #0B8C43;
+}
+.animated-header-circle-color-2 {
+	background-color: #04D939;
+}
+.animated-header-circle-color-3 {
+	background-color: #06BF34;
+}
+
+
+/* 
+	media queries
+*/
+/* too small */
+@media screen and (max-width: 400px) {
+	#animatedHeader {
+		height: 100px;
+	}
+	#headerBackground {
+		height: 80px;
+	}
+}
+/* really small */
+@media screen and (min-width: 401px) and (max-width: 500px) {
+	#animatedHeader {
+		height: 140px;
+	}
+	#headerBackground {
+		height: 100px;
+	}
+}
+/* small */
+@media screen and (min-width: 501px) and (max-width: 600px) {
+	#animatedHeader {
+		height: 140px;
+	}
+	#headerBackground {
+		height: 120px;
+	}
+}
+/* medium */
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+	#animatedHeader {
+		height: 170px;
+	}
+	#headerBackground {
+		height: 150px;
+	}
+}
+/* large-up */
+@media screen and (min-width: 1001px) {
+	#animatedHeader {
+		height: 200px;
+	}
+	#headerBackground {
+		height: 180px;
+	}
+}
